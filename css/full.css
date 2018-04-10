@@ -5,7 +5,7 @@
  */
 
 body {
-	background: url('../GrizzlyParkingHD.png') no-repeat center center fixed;
+	/* background: url('../GrizzlyParkingHD.png') no-repeat center center fixed; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -13,14 +13,29 @@ body {
 
 }
 
-img {
-	width: 50%;
-	border-radius: 20%;
+.onTop{
+	background-color: rgba(255, 255, 255, 0.9); /* Color white with alpha 0.9*/
+	position: absolute;
+	margin: 50%;
 }
 
-@media screen and (min-width: 808px) {
-	img {
+.logo{
+	width: 50%;
+}
+
+.content-wrapper{
+	text-align: center;
+	background-color: black;
+	margin-top: -3em;
+	color: white;
+}
+
+#myCarousel{
+	margin-top: -4em;
+}
+
+@media screen and (max-width: 808px) {
+	.logo {
 		width: 15%;
-		border-radius: 20%;
 	}
 }
